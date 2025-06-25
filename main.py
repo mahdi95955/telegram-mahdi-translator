@@ -13,3 +13,6 @@ async def translate_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 app = ApplicationBuilder().token("7816288854:AAEQ3eT4UaYxt_XiYmP5mK0H63ZpLlrtfaE").build()
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, translate_message))
 app.run_polling()
+git add main.py
+git commit -m
+git push origin main
