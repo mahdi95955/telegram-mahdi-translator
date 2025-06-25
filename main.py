@@ -10,6 +10,6 @@ async def translate_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except Exception as e:
         await update.message.reply_text("❌ خطا در ترجمه.")
 
-app = ApplicationBuilder().token("7731294839:AAEVUoqZWcR_EC0wgHbcnARCJawKmvaXVEU").build()
+app = ApplicationBuilder().token("7816288854:AAEQ3eT4UaYxt_XiYmP5mK0H63ZpLlrtfaE").build()
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, translate_message))
 app.run_polling()
